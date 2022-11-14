@@ -1,0 +1,1 @@
+# MicroService.NetAmazon
