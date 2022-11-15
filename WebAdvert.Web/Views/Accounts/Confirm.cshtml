@@ -1,0 +1,24 @@
+﻿@model ConfirmModel;
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-controller="Accounts" asp-action="Confirm">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-form="Email"></label>
+                <input asp-form="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-form="Code"></label>
+                <input asp-form="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-default"></button>
+        </form>
+    </div>
+</div>
